@@ -1,3 +1,14 @@
 html {
-	background-color: #3b3b3b;
+	background-color: #282828;
+}
+#header {
+	height: 65px;
+}
+body {
+	color: #eddbb2;
+	font-family: sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #eddbb2;
 }

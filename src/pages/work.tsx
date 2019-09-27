@@ -4,12 +4,12 @@ import SEO from '../components/SEO';
 import Header from '../components/Header';
 
 
-const Index: React.FunctionComponent = () => (
+const Work: React.FunctionComponent = () => (
   <>
     <SEO />
     <Header />
-    <h1>Home</h1>
+    <h1>Work</h1>
   </>
 );
 
-export default Index;
+export default Work;

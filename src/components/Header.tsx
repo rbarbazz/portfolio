@@ -4,12 +4,17 @@ import { Link } from 'gatsby';
 
 const Header: React.FunctionComponent = () => (
   <header id="header">
-    <nav className="main-navigation">
+    <nav className="site-navigation">
       <Link
         className="nav-item"
         to="/"
       >
         RB
+      </Link>
+      <Link
+        to="/work/"
+      >
+        Work
       </Link>
     </nav>
   </header>

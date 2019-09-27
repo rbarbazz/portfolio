@@ -13,6 +13,7 @@
   "dependencies": {
     "gatsby": "^2.15.28",
     "gatsby-plugin-react-helmet": "^3.1.10",
+    "normalize.css": "^8.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1"
