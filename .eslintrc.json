@@ -10,5 +10,12 @@
   },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }]
+  },
+  "settings" : {
+    "import/resolver": {
+      "node" : {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }

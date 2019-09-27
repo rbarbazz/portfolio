@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "raphaelbarbazza.com",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "My personal website",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -12,12 +12,15 @@
   },
   "dependencies": {
     "gatsby": "^2.15.28",
+    "gatsby-plugin-react-helmet": "^3.1.10",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "@types/react": "^16.9.3",
     "@types/react-dom": "^16.9.1",
+    "@types/react-helmet": "^5.0.11",
     "@typescript-eslint/eslint-plugin": "^2.3.1",
     "@typescript-eslint/parser": "^2.3.1",
     "eslint": "^6.1.0",
@@ -31,6 +34,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/rbarbazz/raphaelbarbazza.com"
   }
 }
