@@ -1,21 +1,14 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 
-
-const Header: React.FunctionComponent = () => (
+const Header = () => (
   <header id="header">
     <nav className="site-navigation">
-      <Link
-        className="nav-item"
-        to="/"
-      >
-        RB
-      </Link>
-      <Link
-        to="/work/"
-      >
+      <a className="nav-item active-item" href="#home">
+        rbarbazz
+      </a>
+      <a className="nav-item" href="#work">
         Work
-      </Link>
+      </a>
     </nav>
   </header>
 );

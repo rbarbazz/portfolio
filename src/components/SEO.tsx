@@ -2,12 +2,16 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-
-interface SiteMetadata {
+type SiteMetadata = {
   title: string;
   titleTemplate: string;
   description: string;
-}
+  socialLinks: {
+    github: string;
+    linkedin: string;
+    email: string;
+  };
+};
 
 export const useSiteMetadata = (): SiteMetadata => {
   const { site } = useStaticQuery(
@@ -18,6 +22,11 @@ export const useSiteMetadata = (): SiteMetadata => {
             title
             titleTemplate
             description
+            socialLinks {
+              github
+              linkedin
+              email
+            }
           }
         }
       }

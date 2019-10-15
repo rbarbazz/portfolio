@@ -1,0 +1,26 @@
+/*
+==========================================================================
+   Global
+==========================================================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,600,700&display=swap');
+@import './header.scss';
+@import './home.scss';
+
+$main-font: 'Fira Code', monospace;
+
+html {
+    background-color: #282828;
+}
+#header {
+    height: 65px;
+}
+body {
+    font-family: $main-font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a {
+    text-decoration: none;
+}

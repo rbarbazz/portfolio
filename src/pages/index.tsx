@@ -2,13 +2,13 @@ import * as React from 'react';
 
 import SEO from '../components/SEO';
 import Header from '../components/Header';
+import Home from '../components/Home';
 
-
-const Index: React.FunctionComponent = () => (
+const Index = () => (
   <>
     <SEO />
     <Header />
-    <h1>Home</h1>
+    <Home />
   </>
 );
 
