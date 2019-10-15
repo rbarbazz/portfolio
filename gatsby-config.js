@@ -6,7 +6,7 @@ module.exports = {
     socialLinks: {
       github: 'https://github.com/rbarbazz',
       linkedin: 'https://www.linkedin.com/in/raphaelbarbazza/',
-      email: 'raphael.barbazza@gmail.com',
+      email: 'mailto:raphael.barbazza@gmail.com',
     },
   },
   plugins: [

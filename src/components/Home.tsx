@@ -30,12 +30,14 @@ const Home = () => {
           <a target="_blank" href={socialLinks.linkedin}>
             <img src={LinkedinIcon} alt="Linkedin" />
           </a>
-          <a target="_blank" href={`mailto:${socialLinks.email}`}>
+          <a target="_blank" href={socialLinks.email}>
             <img src={EmailIcon} alt="Email" />
           </a>
         </div>
       </div>
-      <img className="arrow-icon" src={ArrowIcon} />
+      <a href="#work">
+        <img className="arrow-icon" src={ArrowIcon} />
+      </a>
     </div>
   );
 };

@@ -7,14 +7,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400,600,700&display=swap');
 @import './header.scss';
 @import './home.scss';
+@import './work.scss';
 
 $main-font: 'Fira Code', monospace;
 
 html {
-    background-color: #282828;
-}
-#header {
-    height: 65px;
+    scroll-behavior: smooth;
 }
 body {
     font-family: $main-font;

@@ -5,16 +5,24 @@
 */
 
 #header {
+    height: 65px;
+    left: 70px;
     position: fixed;
     top: 50px;
-    left: 70px;
 }
 .nav-item {
     color: white;
     font-size: 22px;
     margin-right: 40px;
     padding-bottom: 5px;
+    transition: all 0.25s;
 }
 .nav-item.active-item {
     border-bottom: solid white 2px;
+}
+.dark-font {
+    color: #282828;
+}
+.active-item.dark-font {
+    border-color: #282828;
 }
