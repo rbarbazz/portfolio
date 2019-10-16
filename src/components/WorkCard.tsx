@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Fade from 'react-reveal/Fade';
 
 import AWSIcon from '../../static/techno/AWS.svg';
 import CSSIcon from '../../static/techno/CSS.svg';
@@ -45,7 +46,9 @@ const WorkCard = ({
     <p className="project-description">{description}</p>
     <div className="techno-container">
       {technoList.map(technoItem => (
-        <img src={Techno[technoItem]} alt={`${technoItem} logo`} />
+        <Fade bottom>
+          <img src={Techno[technoItem]} alt={`${technoItem} logo`} />
+        </Fade>
       ))}
     </div>
   </div>

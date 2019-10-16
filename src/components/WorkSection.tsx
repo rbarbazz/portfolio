@@ -22,7 +22,7 @@ const projectList: Project[] = [
   },
   {
     title: "Enfants Venus d'Ailleurs",
-    description: 'Wordpress based website realised for a french charity',
+    description: 'Wordpress-based website created for a French charity',
     screenshotUrl: EVA,
     technoList: ['Wordpress', 'HTML', 'CSS'],
     projectUrl: 'https://enfantsvenusdailleurs.org/',
