@@ -21,6 +21,10 @@
     display: flex;
     flex-direction: column;
     margin: 100px 0;
+
+    a {
+        color: $dark-font-color;
+    }
 }
 .project-screenshot {
     border-bottom: solid 1px rgba(0, 0, 0, 0.3);
@@ -45,7 +49,7 @@
     width: 100%;
 
     img {
-        height: 70px;
+        height: 80px;
         margin: 0 40px;
     }
 }

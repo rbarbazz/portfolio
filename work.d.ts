@@ -3,4 +3,5 @@ declare interface Project {
   description: string;
   screenshotUrl: string;
   technoList: string[];
+  projectUrl: string;
 }
