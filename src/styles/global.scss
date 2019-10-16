@@ -4,18 +4,20 @@
 ==========================================================================
 */
 
+$main-font-family: 'Fira Code', monospace;
+$dark-font-color: #282828;
+
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400,600,700&display=swap');
 @import './header.scss';
 @import './home.scss';
 @import './work.scss';
-
-$main-font: 'Fira Code', monospace;
+@import './footer.scss';
 
 html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: $main-font;
+    font-family: $main-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

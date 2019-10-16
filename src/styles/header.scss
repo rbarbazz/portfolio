@@ -21,8 +21,8 @@
     border-bottom: solid white 2px;
 }
 .dark-font {
-    color: #282828;
+    color: $dark-font-color;
 }
 .active-item.dark-font {
-    border-color: #282828;
+    border-color: $dark-font-color;
 }

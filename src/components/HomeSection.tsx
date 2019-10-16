@@ -1,12 +1,12 @@
 import * as React from 'react';
 import ArrowIcon from '../../static/keyboard_arrow_down-24px.svg';
 import AuthorPhoto from '../../static/RB.jpg';
-import GithubIcon from '../../static/Github.svg';
-import LinkedinIcon from '../../static/Linkedin.svg';
-import EmailIcon from '../../static/Email.svg';
-import { useSiteMetadata } from '../components/SEO';
+import GithubIcon from '../../static/social/Github.svg';
+import LinkedinIcon from '../../static/social/Linkedin.svg';
+import EmailIcon from '../../static/social/Email.svg';
+import { useSiteMetadata } from './SEO';
 
-const Home = () => {
+const HomeSection = () => {
   const { title, description, socialLinks } = useSiteMetadata();
 
   return (
@@ -41,4 +41,5 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+
+export default HomeSection;
