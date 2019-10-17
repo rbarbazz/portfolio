@@ -38,7 +38,7 @@ const projectList: Project[] = [
   },
   {
     title: 'Corewar',
-    description: '42 algorithm project, a virtual arena where processes fight',
+    description: 'Virtual arena where concurrent processes fight',
     screenshotUrl: Corewar,
     technoList: ['C', 'GTK'],
     projectUrl: 'https://github.com/rbarbazz/corewar',
@@ -47,7 +47,7 @@ const projectList: Project[] = [
 
 const WorkSection = () => (
   <div className="work-section" id="work">
-    
+    <h2 className="section-title">Things I've done</h2>
     {projectList.map((projectItem, index) => {
       const {
         title,
