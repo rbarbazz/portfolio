@@ -1,9 +1,10 @@
 import * as React from 'react';
-import ArrowIcon from '../../static/keyboard_arrow_down-24px.svg';
+
+import ArrowIcon from './ArrowIcon';
 import AuthorPhoto from '../../static/RB.jpg';
-import GithubIcon from '../../static/social/Github.svg';
-import LinkedinIcon from '../../static/social/Linkedin.svg';
-import EmailIcon from '../../static/social/Email.svg';
+import GithubIcon from './GithubIcon';
+import LinkedinIcon from './LinkedinIcon';
+import EmailIcon from './EmailIcon';
 import { useSiteMetadata } from './SEO';
 
 const HomeSection = () => {
@@ -15,6 +16,7 @@ const HomeSection = () => {
       id="home"
       style={{ backgroundImage: 'url(/Emerald_Lake.jpg)' }}
     >
+
       <div className="presentation-container">
         <img
           className="presentation-photo"
@@ -25,18 +27,18 @@ const HomeSection = () => {
         <p className="presentation-description">{description}</p>
         <div className="socials-container">
           <a target="_blank" href={socialLinks.github}>
-            <img src={GithubIcon} alt="Github" />
+            <GithubIcon />
           </a>
           <a target="_blank" href={socialLinks.linkedin}>
-            <img src={LinkedinIcon} alt="Linkedin" />
+            <LinkedinIcon />
           </a>
           <a target="_blank" href={socialLinks.email}>
-            <img src={EmailIcon} alt="Email" />
+            <EmailIcon />
           </a>
         </div>
       </div>
-      <a href="#work">
-        <img className="arrow-icon" src={ArrowIcon} />
+      <a className="arrow-icon"  href="#work">
+        <ArrowIcon />
       </a>
     </div>
   );

@@ -16,13 +16,21 @@
     margin-right: 40px;
     padding-bottom: 5px;
     transition: all 0.25s;
-}
-.nav-item.active-item {
-    border-bottom: solid white 2px;
-}
-.dark-font {
-    color: $dark-font-color;
-}
-.active-item.dark-font {
-    border-color: $dark-font-color;
+
+    &.active-item {
+        border-bottom: solid white 2px;
+    }
+    &.dark-font {
+        color: $dark-font-color;
+        border-color: $dark-font-color;
+    }
+    &:hover {
+        color: $dark-font-color;
+        border-color: $dark-font-color;
+
+        &.dark-font {
+            color: $secondary-font-color;
+            border-color: $secondary-font-color;
+        }
+    }
 }

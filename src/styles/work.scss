@@ -10,9 +10,7 @@
     color: $dark-font-color;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     padding-top: 100px;
-    width: 100%;
 }
 .work-card {
     align-items: center;
@@ -35,6 +33,13 @@
     font-size: 37px;
     font-weight: bold;
     margin: 50px 0 20px;
+
+    & > a {
+        transition: color 0.5s;
+    }
+    &:hover > a {
+        color: $secondary-font-color;
+    }
 }
 .project-description {
     font-size: 20px;

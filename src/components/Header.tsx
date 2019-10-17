@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 const Header = () => {
-  const [isAtWork, checkOffset] = React.useState(false);
+  const [isAtWork, toggleIsAtWork] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
-      checkOffset(false);
+      toggleIsAtWork(false);
       if (document.documentElement.clientHeight * 0.95 < window.pageYOffset)
-        checkOffset(true);
+        toggleIsAtWork(true);
     };
     window.addEventListener('scroll', handleScroll);
     return () => {

@@ -8,17 +8,23 @@
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: $light-font-color;
     display: flex;
     height: 100vh;
     justify-content: center;
-    width: 100%;
 }
 .arrow-icon {
-    bottom: 20px;
-    left: calc(50% - 60px);
+    bottom: 40px;
+    left: calc(50% - 32px);
     position: absolute;
-    width: 120px;
+    
+    
+    & * {
+        transition: fill 0.3s;
+    }
+    &:hover * {
+        fill: $dark-font-color;
+    }
 }
 
 /*
@@ -46,9 +52,14 @@
 }
 .socials-container {
     display: flex;
-}
-.socials-container {
+
     a:nth-last-of-type(2) {
         margin: 0 40px;
+    }
+    & * {
+        transition: fill 0.3s;
+    }
+    a:hover * {
+        fill: $dark-font-color;
     }
 }
