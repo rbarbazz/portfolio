@@ -21,6 +21,10 @@ $techno-logo-height: 80px;
     display: flex;
     flex-direction: column;
     margin: 100px 0;
+
+    &:nth-of-type(2) {
+        margin: 100px 150px;
+    }
 }
 .techno-title {
     font-size: 30px;
@@ -30,21 +34,56 @@ $techno-logo-height: 80px;
 }
 .techno-wrapper {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
 }
 .techno-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 20px;
     max-width: 405px;
-    justify-content: center;
 
-    &.front-container {
+    .techno-logo-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 160px;
+    }
+    &.front-container,
+    &.tools-container {
         max-width: 275px;
+        
+        .techno-logo-wrapper {
+            width: 130px;
+        }
     }
     img {
-        margin: 20px;
         height: $techno-logo-height;
+        margin: 20px;
+    }
+}
+
+/*
+   Responsive
+==========================================================================
+*/
+@media (max-width: 1400px) {    
+    .techno-wrapper {
+        align-items: center;
+        flex-direction: column;
+
+        .techno-card {
+            margin: 50px 0;
+
+            &:first-of-type {
+                margin-top: 100px;
+            }
+        }
+    }
+    .techno-container {
+        max-width: initial !important;
+        width: 635px;
+
+        .techno-logo-wrapper {
+            width: initial;
+        }
     }
 }

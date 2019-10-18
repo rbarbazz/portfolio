@@ -16,7 +16,6 @@ const HomeSection = () => {
       id="home"
       style={{ backgroundImage: 'url(/Emerald_Lake.jpg)' }}
     >
-
       <div className="presentation-container">
         <img
           className="presentation-photo"
@@ -37,7 +36,7 @@ const HomeSection = () => {
           </a>
         </div>
       </div>
-      <a className="arrow-icon"  href="#work">
+      <a className="arrow-icon" href="#stack">
         <ArrowIcon />
       </a>
     </div>

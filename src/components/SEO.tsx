@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useStaticQuery, graphql } from 'gatsby';
 
 type SiteMetadata = {
@@ -39,41 +39,43 @@ const SEO: Function = () => {
   const { title, titleTemplate, description } = useSiteMetadata();
 
   return (
-    <Helmet
-      htmlAttributes={{ lang: 'en' }}
-      title={title}
-      titleTemplate={titleTemplate}
-      meta={[
-        {
-          name: 'description',
-          content: description,
-        },
-        {
-          property: 'og:title',
-          content: title,
-        },
-        {
-          property: 'og:description',
-          content: description,
-        },
-        {
-          property: 'og:type',
-          content: 'website',
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary',
-        },
-        {
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          name: 'twitter:description',
-          content: description,
-        },
-      ]}
-    />
+    <HelmetProvider>
+      <Helmet
+        htmlAttributes={{ lang: 'en' }}
+        title={title}
+        titleTemplate={titleTemplate}
+        meta={[
+          {
+            name: 'description',
+            content: description,
+          },
+          {
+            property: 'og:title',
+            content: title,
+          },
+          {
+            property: 'og:description',
+            content: description,
+          },
+          {
+            property: 'og:type',
+            content: 'website',
+          },
+          {
+            name: 'twitter:card',
+            content: 'summary',
+          },
+          {
+            name: 'twitter:title',
+            content: title,
+          },
+          {
+            name: 'twitter:description',
+            content: description,
+          },
+        ]}
+      />
+    </HelmetProvider>
   );
 };
 

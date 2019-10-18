@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Fade from 'react-reveal/Fade';
 
 import AWSIcon from '../../static/techno/AWS.svg';
 import CIcon from '../../static/techno/C.svg';
@@ -8,6 +7,7 @@ import DjangoIcon from '../../static/techno/Django.svg';
 import GTKIcon from '../../static/techno/GTK.svg';
 import GulpIcon from '../../static/techno/Gulp.svg';
 import HTMLIcon from '../../static/techno/HTML.svg';
+import MochaIcon from '../../static/techno/Mocha.svg';
 import MySQLIcon from '../../static/techno/MySQL.svg';
 import NodeIcon from '../../static/techno/Node.svg';
 import ReactIcon from '../../static/techno/React.svg';
@@ -15,6 +15,7 @@ import ReduxIcon from '../../static/techno/Redux.svg';
 import SassIcon from '../../static/techno/Sass.svg';
 import SocketIOIcon from '../../static/techno/SocketIO.svg';
 import TypescriptIcon from '../../static/techno/Typescript.svg';
+import WebpackIcon from '../../static/techno/Webpack.svg';
 import WordpressIcon from '../../static/techno/Wordpress.svg';
 
 export const Techno: { [key: string]: string } = {
@@ -25,6 +26,7 @@ export const Techno: { [key: string]: string } = {
   GTK: GTKIcon,
   Gulp: GulpIcon,
   HTML: HTMLIcon,
+  Mocha: MochaIcon,
   MySQL: MySQLIcon,
   Node: NodeIcon,
   React: ReactIcon,
@@ -32,6 +34,7 @@ export const Techno: { [key: string]: string } = {
   Sass: SassIcon,
   SocketIO: SocketIOIcon,
   Typescript: TypescriptIcon,
+  Webpack: WebpackIcon,
   Wordpress: WordpressIcon,
 };
 
@@ -58,9 +61,11 @@ const WorkCard = ({
     <p className="project-description">{description}</p>
     <div className="project-techno-container">
       {technoList.map((technoItem, index) => (
-        <Fade key={`${title}-techno${index}`} bottom>
-          <img src={Techno[technoItem]} alt={`${technoItem} logo`} />
-        </Fade>
+        <img
+          key={`${title}-techno${index}`}
+          src={Techno[technoItem]}
+          alt={`${technoItem} logo`}
+        />
       ))}
     </div>
   </div>
