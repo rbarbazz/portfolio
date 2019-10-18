@@ -14,14 +14,19 @@
     justify-content: center;
 }
 .arrow-icon {
-    bottom: 40px;
-    left: calc(50% - 32px);
+    $arrow-width: 64px;
+
+    bottom: $base-margin / 2;
+    left: calc(50% - ($arrow-width / 2));
     position: absolute;
 
-    & * {
+    svg {
+        width: $arrow-width;
+    }
+    path {
         transition: fill 0.3s;
     }
-    &:hover * {
+    &:hover path {
         fill: $dark-font-color;
     }
 }
@@ -35,12 +40,12 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-weight: bold;
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 34px;
 }
 .presentation-photo {
     border-radius: 50%;
-    margin-bottom: 50px;
+    margin-bottom: $base-margin / 2;
 }
 .presentation-title {
     font-size: 2em;
@@ -49,13 +54,13 @@
 }
 .presentation-description {
     font-size: 1em;
-    margin: 10px 0 50px;
+    margin: 10px 0 ($base-margin / 2);
 }
 .socials-container {
     display: flex;
 
     a:nth-last-of-type(2) {
-        margin: 0 40px;
+        margin: 0 ($base-margin / 2);
     }
     & * {
         transition: fill 0.3s;
@@ -70,24 +75,57 @@
 ==========================================================================
 */
 
-@media (max-width: map-get($breakpoints, phone)) {
+@media (max-width: map-get($breakpoints, laptop)) {
+    $arrow-width: 45px;
+
     .arrow-icon {
-        bottom: 20px;
-        left: calc(50% - 20px);
+        left: calc(50% - ($arrow-width / 2));
 
         svg {
-            width: 40px;
+            width: $arrow-width;
         }
     }
+}
+
+@media (max-width: map-get($breakpoints, tablet)) {
+    .presentation-container {
+        font-size: 26px;
+    }
+    .presentation-photo {
+        height: 160px;
+        margin-bottom: 30px;
+    }
+    .presentation-description {
+        width: 90%;
+    }
+}
+
+@media (max-width: map-get($breakpoints, small-tablet)) {
     .presentation-container {
         font-size: 20px;
     }
+}
+
+@media (max-width: map-get($breakpoints, phone)) {
+    .presentation-container {
+        font-size: 18px;
+    }
     .presentation-photo {
         height: 130px;
-        margin-bottom: 10px;
     }
     .presentation-description {
         max-width: 275px;
-        width: 90%;
+        margin-bottom: 30px;
+    }
+    .socials-container {
+        justify-content: space-evenly;
+        width: 100%;
+
+        a:nth-last-of-type(2) {
+            margin: 0;
+        }
+    }
+    .arrow-icon {
+        bottom: 20px;
     }
 }

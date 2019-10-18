@@ -5,16 +5,21 @@
 */
 
 #footer {
-    margin: 100px 0 20px;
-}
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 
-/*
-   Responsive
-==========================================================================
-*/
+    .arrow-icon {
+        position: initial;
+        margin-bottom: $base-margin;
+        transform: rotate(180deg);
 
-@media (max-width: map-get($breakpoints, phone)) {
-    #footer {
-        margin-top: 50px;
+        & * {
+            fill: $dark-font-color;
+        }
+        &:hover * {
+            fill: $secondary-font-color;
+        }
     }
 }

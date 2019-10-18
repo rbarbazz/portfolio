@@ -10,7 +10,7 @@
     color: $dark-font-color;
     display: flex;
     flex-direction: column;
-    padding-top: 125px;
+    margin-bottom: $base-margin;
 }
 .work-card {
     align-items: center;
@@ -19,12 +19,18 @@
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    margin: 100px 0;
+    margin: ($base-margin / 2) 0;
     max-width: 1200px;
     width: 90%;
 
     a {
         color: $dark-font-color;
+    }
+    &:first-of-type {
+        margin-top: 0;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
     }
 }
 .project-screenshot {
@@ -36,7 +42,7 @@
 .project-title {
     font-size: 1.9em;
     font-weight: 500;
-    margin: 50px 0 20px;
+    margin: ($base-margin / 2) 0 20px;
     width: 90%;
 
     & > a {
@@ -48,14 +54,14 @@
 }
 .project-description {
     font-size: 1em;
-    margin: 0 0 25px;
+    margin: 0 0 ($base-margin / 2);
     width: 90%;
 }
 .project-techno-container {
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 25px 0 50px;
+    margin-bottom: $base-margin / 2;
     width: 100%;
 
     img {
@@ -70,44 +76,30 @@
 */
 
 @media (max-width: map-get($breakpoints, tablet)) {
-    .work-card {
-        margin: 50px 0;
-
-        &:first-of-type {
-            margin-top: 100px;
-        }
-    }
     .project-techno-container {
         justify-content: space-evenly;
-        flex-wrap: wrap;
-    
+
         img {
-            height: 50px;
             margin: 0;
         }
     }
 }
+
+@media (max-width: map-get($breakpoints, small-tablet)) {
+}
+
 @media (max-width: map-get($breakpoints, phone)) {
-    .work-section {
-        padding-top: 50px;
-    }
     .work-card {
         font-size: 16px;
-
-        &:first-of-type {
-            margin-top: 50px;
-        } 
     }
     .project-techno-container {
+        flex-wrap: wrap;
         padding: 0;
+        margin-bottom: ($base-margin / 2) - 20px;
 
         .project-techno-wrapper {
             margin: 20px 0;
-            width: 150px;
-
-            img {
-                height: 60px;
-            }
+            width: 50%;
         }
     }
 }

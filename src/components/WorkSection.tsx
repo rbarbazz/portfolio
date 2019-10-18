@@ -47,7 +47,7 @@ const projectList: Project[] = [
 
 const WorkSection = () => (
   <div className="work-section" id="work">
-    <h2 className="section-title">Things I've done</h2>
+    <h2 className="section-title">Work</h2>
     {projectList.map((projectItem: Project, index) => {
       const {
         title,
