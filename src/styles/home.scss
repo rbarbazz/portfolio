@@ -79,6 +79,7 @@
     $arrow-width: 45px;
 
     .arrow-icon {
+        bottom: $base-margin / 4;
         left: calc(50% - (#{$arrow-width} / 2));
 
         svg {
