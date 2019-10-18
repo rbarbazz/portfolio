@@ -1,0 +1,50 @@
+/*
+==========================================================================
+   Techno section
+==========================================================================
+*/
+
+$techno-logo-height: 80px;
+
+.techno-section {
+    align-items: center;
+    background-color: white;
+    color: $dark-font-color;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.techno-card {
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+}
+.techno-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0 0;
+    text-transform: capitalize;
+}
+.techno-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.techno-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    max-width: 405px;
+    justify-content: center;
+
+    &.front-container {
+        max-width: 275px;
+    }
+    img {
+        margin: 20px;
+        height: $techno-logo-height;
+    }
+}

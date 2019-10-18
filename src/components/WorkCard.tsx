@@ -12,7 +12,9 @@ import MySQLIcon from '../../static/techno/MySQL.svg';
 import NodeIcon from '../../static/techno/Node.svg';
 import ReactIcon from '../../static/techno/React.svg';
 import ReduxIcon from '../../static/techno/Redux.svg';
+import SassIcon from '../../static/techno/Sass.svg';
 import SocketIOIcon from '../../static/techno/SocketIO.svg';
+import TypescriptIcon from '../../static/techno/Typescript.svg';
 import WordpressIcon from '../../static/techno/Wordpress.svg';
 
 export const Techno: { [key: string]: string } = {
@@ -27,7 +29,9 @@ export const Techno: { [key: string]: string } = {
   Node: NodeIcon,
   React: ReactIcon,
   Redux: ReduxIcon,
+  Sass: SassIcon,
   SocketIO: SocketIOIcon,
+  Typescript: TypescriptIcon,
   Wordpress: WordpressIcon,
 };
 
@@ -52,7 +56,7 @@ const WorkCard = ({
       </a>
     </h3>
     <p className="project-description">{description}</p>
-    <div className="techno-container">
+    <div className="project-techno-container">
       {technoList.map((technoItem, index) => (
         <Fade key={`${title}-techno${index}`} bottom>
           <img src={Techno[technoItem]} alt={`${technoItem} logo`} />
