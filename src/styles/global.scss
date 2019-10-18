@@ -5,13 +5,21 @@
 */
 
 $main-font-family: 'Fira Code', monospace;
+
 $dark-font-color: #282828;
 $light-font-color: white;
 $secondary-font-color: #458588;
 
+$breakpoints: (
+  phone: 575px,
+  small-tablet: 700px,
+  tablet: 900px,
+  desktop: 1400px
+);
+
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:400,500,700&display=swap');
 @import './home.scss';
-@import './techno.scss';
+@import './stack.scss';
 @import './work.scss';
 @import './footer.scss';
 
@@ -30,6 +38,13 @@ a {
 }
 .section-title {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
+    width: 90%;
+}
+
+@media (max-width: map-get($breakpoints, phone)) {
+    .section-title {
+        font-size: 30px;
+    }
 }

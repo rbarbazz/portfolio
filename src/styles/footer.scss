@@ -7,3 +7,14 @@
 #footer {
     margin: 100px 0 20px;
 }
+
+/*
+   Responsive
+==========================================================================
+*/
+
+@media (max-width: map-get($breakpoints, phone)) {
+    #footer {
+        margin-top: 50px;
+    }
+}

@@ -9,9 +9,9 @@ const devStack: { [key: string]: string[] } = {
 };
 
 const StackSection = () => (
-  <div className="techno-section" id="techno">
+  <div className="stack-section" id="stack">
     <h2 className="section-title">Development Stack</h2>
-    <div className="techno-wrapper">
+    <div className="stack-wrapper">
       <TechnoCard categoryName="front" technoList={devStack.front} />
       <TechnoCard categoryName="back" technoList={devStack.back} />
       <TechnoCard categoryName="tools" technoList={devStack.tools} />

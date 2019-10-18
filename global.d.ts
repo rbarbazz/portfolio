@@ -13,4 +13,4 @@ declare module '*.png' {
   export default value;
 }
 
-declare module 'react-reveal/Fade';
+declare module 'gatsby-plugin-gtag';

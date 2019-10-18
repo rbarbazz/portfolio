@@ -12,5 +12,13 @@ module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `UA-150391065-1`,
+        head: true,
+        anonymize: false,
+      },
+    },
   ],
 };

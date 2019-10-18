@@ -9,8 +9,8 @@ const TechnoCard = ({
   categoryName: string;
   technoList: string[];
 }) => (
-  <div className="techno-card">
-    <h3 className="techno-title">{categoryName}</h3>
+  <div className="stack-card">
+    <h3 className="stack-title">{categoryName}</h3>
     <div className={`${categoryName}-container techno-container`}>
       {technoList.map((technoItem, index) => (
         <div className="techno-logo-wrapper" key={`techno${index}`}>

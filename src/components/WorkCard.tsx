@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { OutboundLink } from 'gatsby-plugin-gtag';
 
 import AWSIcon from '../../static/techno/AWS.svg';
 import CIcon from '../../static/techno/C.svg';
@@ -46,26 +47,24 @@ const WorkCard = ({
   projectUrl,
 }: Project) => (
   <div className="work-card">
-    <a href={projectUrl} target="_blank">
+    <OutboundLink href={projectUrl} target="_blank">
       <img
         className="project-screenshot"
         src={screenshotUrl}
         alt={`${title} illustration`}
       />
-    </a>
+    </OutboundLink>
     <h3 className="project-title">
-      <a href={projectUrl} target="_blank">
+      <OutboundLink href={projectUrl} target="_blank">
         {title}
-      </a>
+      </OutboundLink>
     </h3>
     <p className="project-description">{description}</p>
     <div className="project-techno-container">
       {technoList.map((technoItem, index) => (
-        <img
-          key={`${title}-techno${index}`}
-          src={Techno[technoItem]}
-          alt={`${technoItem} logo`}
-        />
+        <div key={`${title}-techno${index}`} className="project-techno-wrapper">
+          <img src={Techno[technoItem]} alt={`${technoItem} logo`} />
+        </div>
       ))}
     </div>
   </div>
