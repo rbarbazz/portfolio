@@ -26,14 +26,14 @@ const projectList: Project[] = [
     title: 'Alexis Assoignon',
     description: 'Personal blog about financial independance',
     screenshotUrl: AlexisAssoignon,
-    technoList: ['Wordpress', 'HTML', 'CSS', 'Gulp'],
+    technoList: ['Wordpress', 'JQuery', 'HTML', 'CSS'],
     projectUrl: 'https://alexisassoignon.com/',
   },
   {
     title: "Enfants Venus d'Ailleurs",
     description: 'Wordpress-based website created for a French charity',
     screenshotUrl: EVA,
-    technoList: ['Wordpress', 'HTML', 'CSS'],
+    technoList: ['Wordpress', 'Gulp', 'HTML', 'CSS'],
     projectUrl: 'https://enfantsvenusdailleurs.org/',
   },
   {

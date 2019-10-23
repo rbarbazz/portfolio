@@ -8,6 +8,7 @@ import DjangoIcon from '../../static/techno/Django.svg';
 import GTKIcon from '../../static/techno/GTK.svg';
 import GulpIcon from '../../static/techno/Gulp.svg';
 import HTMLIcon from '../../static/techno/HTML.svg';
+import JQueryIcon from '../../static/techno/JQuery.svg';
 import MochaIcon from '../../static/techno/Mocha.svg';
 import MySQLIcon from '../../static/techno/MySQL.svg';
 import NodeIcon from '../../static/techno/Node.svg';
@@ -27,6 +28,7 @@ export const Techno: { [key: string]: string } = {
   GTK: GTKIcon,
   Gulp: GulpIcon,
   HTML: HTMLIcon,
+  JQuery: JQueryIcon,
   Mocha: MochaIcon,
   MySQL: MySQLIcon,
   Node: NodeIcon,
