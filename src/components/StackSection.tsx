@@ -3,9 +3,9 @@ import * as React from 'react';
 import TechnoCard from './TechnoCard';
 
 const devStack: { [key: string]: string[] } = {
-  front: ['React', 'Typescript', 'Redux', 'Sass'],
-  back: ['Node', 'Django', 'MySQL'],
-  tools: ['Webpack', 'Gulp', 'Mocha'],
+  front: ['React', 'Redux', 'Typescript', 'Sass'],
+  back: ['Node', 'Django', 'MongoDB', 'MySQL'],
+  tools: ['Webpack', 'Gulp', 'Mocha', 'Docker'],
 };
 
 const StackSection = () => (

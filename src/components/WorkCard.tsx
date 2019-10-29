@@ -5,11 +5,13 @@ import AWSIcon from '../../static/techno/AWS.svg';
 import CIcon from '../../static/techno/C.svg';
 import CSSIcon from '../../static/techno/CSS.svg';
 import DjangoIcon from '../../static/techno/Django.svg';
+import DockerIcon from '../../static/techno/Docker.png';
 import GTKIcon from '../../static/techno/GTK.svg';
 import GulpIcon from '../../static/techno/Gulp.svg';
 import HTMLIcon from '../../static/techno/HTML.svg';
 import JQueryIcon from '../../static/techno/JQuery.svg';
 import MochaIcon from '../../static/techno/Mocha.svg';
+import MongoDBIcon from '../../static/techno/MongoDB.svg';
 import MySQLIcon from '../../static/techno/MySQL.svg';
 import NodeIcon from '../../static/techno/Node.svg';
 import ReactIcon from '../../static/techno/React.svg';
@@ -25,11 +27,13 @@ export const Techno: { [key: string]: string } = {
   C: CIcon,
   CSS: CSSIcon,
   Django: DjangoIcon,
+  Docker: DockerIcon,
   GTK: GTKIcon,
   Gulp: GulpIcon,
   HTML: HTMLIcon,
   JQuery: JQueryIcon,
   Mocha: MochaIcon,
+  MongoDB: MongoDBIcon,
   MySQL: MySQLIcon,
   Node: NodeIcon,
   React: ReactIcon,

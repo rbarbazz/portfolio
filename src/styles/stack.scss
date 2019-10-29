@@ -5,6 +5,9 @@
 */
 
 $techno-logo-height: 80px;
+$img-margin-sides: 40px;
+$wrapper-width-back: 187px + $img-margin-sides;
+$wrapper-width-others: 112px + $img-margin-sides;
 
 .stack-section {
     align-items: center;
@@ -29,7 +32,7 @@ $techno-logo-height: 80px;
 .stack-wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: $main-container-size;
     width: 100%;
 }
 .techno-container {
@@ -37,24 +40,24 @@ $techno-logo-height: 80px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 10px;
-    max-width: 405px;
+    max-width: $wrapper-width-back * 2;
 
     .techno-logo-wrapper {
         display: flex;
         justify-content: center;
-        width: 160px;
+        width: $wrapper-width-back;
     }
     &.front-container,
     &.tools-container {
-        max-width: 275px;
+        max-width: $wrapper-width-others * 2;
 
         .techno-logo-wrapper {
-            width: 130px;
+            width: $wrapper-width-others;
         }
     }
     img {
         height: $techno-logo-height;
-        margin: 20px;
+        margin: 20px ($img-margin-sides / 2);
     }
 }
 
@@ -63,9 +66,36 @@ $techno-logo-height: 80px;
 ==========================================================================
 */
 
-@media (max-width: map-get($breakpoints, laptop)) {
+@media (max-width: map-get($breakpoints, desktop)) {
     .stack-wrapper {
         justify-content: space-evenly;
+    }
+}
+
+@media (max-width: map-get($breakpoints, laptop)) {
+    $techno-logo-height: 70px;
+    $img-margin-sides: 30px;
+    $wrapper-width-back: 164px + $img-margin-sides;
+    $wrapper-width-others: 98px + $img-margin-sides;
+
+    .techno-container {
+        max-width: $wrapper-width-back * 2;
+
+        .techno-logo-wrapper {
+            width: $wrapper-width-back;
+        }
+        &.front-container,
+        &.tools-container {
+            max-width: $wrapper-width-others * 2;
+
+            .techno-logo-wrapper {
+                width: $wrapper-width-others;
+            }
+        }
+        img {
+            height: $techno-logo-height;
+            margin: 20px ($img-margin-sides / 2);
+        }
     }
 }
 
@@ -86,15 +116,34 @@ $techno-logo-height: 80px;
     }
     .techno-container {
         max-width: initial !important;
-        width: 635px;
+        width: $wrapper-width-others * 4;
 
         .techno-logo-wrapper {
             width: initial;
         }
     }
+    .back-container {
+        .techno-logo-wrapper:first-of-type {
+            order: 1;
+        }
+        .techno-logo-wrapper:nth-of-type(2) {
+            order: 3;
+        }
+        .techno-logo-wrapper:nth-of-type(3) {
+            order: 2;
+        }
+        .techno-logo-wrapper:last-of-type {
+            order: 4;
+        }
+    }
 }
 
 @media (max-width: map-get($breakpoints, small-tablet)) {
+    .back-container {
+        .techno-logo-wrapper {
+            width: 100%;
+        }
+    }
     .techno-container {
         width: 275px;
     }

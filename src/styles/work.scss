@@ -20,7 +20,7 @@
     flex-direction: column;
     font-size: 20px;
     margin: ($base-margin / 2) 0;
-    max-width: 1200px;
+    max-width: $main-container-size;
     width: 90%;
 
     a {
@@ -36,7 +36,7 @@
 .project-screenshot {
     border-bottom: solid 1px rgba(0, 0, 0, 0.3);
     border-radius: 10px 10px 0 0;
-    max-width: 1200px;
+    max-width: $main-container-size;
     width: 100%;
 }
 .project-title {
