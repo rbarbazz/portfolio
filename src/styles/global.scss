@@ -45,6 +45,13 @@ a {
     font-weight: 500;
     margin: $base-margin 0;
     width: 90%;
+
+    & > a {
+        transition: color 0.5s;
+    }
+    &:hover > a {
+        color: $secondary-font-color;
+    }
 }
 
 @media (max-width: map-get($breakpoints, phone)) {

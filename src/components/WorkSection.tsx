@@ -4,6 +4,7 @@ import WorkCard from './WorkCard';
 import AlexisAssoignon from '../../static/project/AlexisAssoignon.jpg';
 import Corewar from '../../static/project/Corewar.png';
 import EVA from '../../static/project/EVA.jpg';
+import GameReleaseBot from '../../static/project/GameReleaseBot.png';
 import Insidr from '../../static/project/Insidr.jpg';
 import RedTetris from '../../static/project/RedTetris.png';
 
@@ -30,6 +31,13 @@ const projectList: Project[] = [
     projectUrl: 'https://alexisassoignon.com/',
   },
   {
+    title: 'Game Release Bot',
+    description: 'Discord bot - Game release reminder',
+    screenshotUrl: GameReleaseBot,
+    technoList: ['Node', 'MongoDB', 'Typescript', 'AWS'],
+    projectUrl: 'https://github.com/rbarbazz/game-release-bot',
+  },
+  {
     title: "Enfants Venus d'Ailleurs",
     description: 'Wordpress-based website created for a French charity',
     screenshotUrl: EVA,
@@ -47,7 +55,7 @@ const projectList: Project[] = [
 
 const WorkSection = () => (
   <div className="work-section" id="work">
-    <h2 className="section-title">Work</h2>
+    <h2 className="section-title"><a href="#work">Work</a></h2>
     {projectList.map((projectItem: Project, index) => {
       const {
         title,

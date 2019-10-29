@@ -10,7 +10,7 @@ const devStack: { [key: string]: string[] } = {
 
 const StackSection = () => (
   <div className="stack-section" id="stack">
-    <h2 className="section-title">Development Stack</h2>
+    <h2 className="section-title"><a href="#stack">Development Stack</a></h2>
     <div className="stack-wrapper">
       <TechnoCard categoryName="front" technoList={devStack.front} />
       <TechnoCard categoryName="back" technoList={devStack.back} />
