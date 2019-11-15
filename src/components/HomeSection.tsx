@@ -9,7 +9,7 @@ import EmailIcon from './EmailIcon';
 import { useSiteMetadata } from './SEO';
 
 const HomeSection = () => {
-  const { title, description, socialLinks } = useSiteMetadata();
+  const { title, socialLinks } = useSiteMetadata();
 
   return (
     <div
@@ -24,7 +24,7 @@ const HomeSection = () => {
           alt="Raphaël Barbazza"
         />
         <h1 className="presentation-title">{title}</h1>
-        <p className="presentation-description">{description}</p>
+        <p className="presentation-description">Full Stack Developer, based in Vancouver, BC</p>
         <div className="socials-container">
           <OutboundLink target="_blank" href={socialLinks.github}>
             <GithubIcon />
