@@ -1,6 +1,6 @@
-import * as React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react';
 
 type SiteMetadata = {
   title: string;

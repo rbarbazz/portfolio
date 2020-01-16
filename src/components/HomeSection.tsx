@@ -1,14 +1,14 @@
-import * as React from 'react';
 import { OutboundLink } from 'gatsby-plugin-gtag';
+import React from 'react';
 
+import { useSiteMetadata } from './SEO';
 import ArrowIcon from './ArrowIcon';
 import AuthorPhoto from '../../static/RB.jpg';
+import EmailIcon from './EmailIcon';
 import GithubIcon from './GithubIcon';
 import LinkedinIcon from './LinkedinIcon';
-import EmailIcon from './EmailIcon';
-import { useSiteMetadata } from './SEO';
 
-const HomeSection = () => {
+const HomeSection: React.FC = () => {
   const { title, socialLinks } = useSiteMetadata();
 
   return (
@@ -24,7 +24,9 @@ const HomeSection = () => {
           alt="Raphaël Barbazza"
         />
         <h1 className="presentation-title">{title}</h1>
-        <p className="presentation-description">Full Stack Developer, based in Vancouver, BC</p>
+        <p className="presentation-description">
+          Full Stack Developer, based in Vancouver, BC
+        </p>
         <div className="socials-container">
           <OutboundLink target="_blank" href={socialLinks.github}>
             <GithubIcon />

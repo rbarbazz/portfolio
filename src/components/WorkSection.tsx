@@ -1,12 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 
-import WorkCard from './WorkCard';
 import AlexisAssoignon from '../../static/project/AlexisAssoignon.jpg';
 import Corewar from '../../static/project/Corewar.png';
 import EVA from '../../static/project/EVA.jpg';
 import GameReleaseBot from '../../static/project/GameReleaseBot.png';
 import Insidr from '../../static/project/Insidr.jpg';
+import PersonalFinanceTracker from '../../static/project/PersonalFinanceTracker.jpg';
 import RedTetris from '../../static/project/RedTetris.png';
+import WorkCard from './WorkCard';
 
 const projectList: Project[] = [
   {
@@ -15,6 +16,13 @@ const projectList: Project[] = [
     screenshotUrl: Insidr,
     technoList: ['React', 'Django', 'MySQL', 'AWS'],
     projectUrl: 'https://insidr.co/free-guide-form/',
+  },
+  {
+    title: 'Personal Finance Tracker',
+    description: 'Budget planner and expense tracker',
+    screenshotUrl: PersonalFinanceTracker,
+    technoList: ['React', 'Node', 'Postgres', 'Docker'],
+    projectUrl: 'https://finance.rbarbazz.com/',
   },
   {
     title: 'Red Tetris',
@@ -53,9 +61,11 @@ const projectList: Project[] = [
   },
 ];
 
-const WorkSection = () => (
+const WorkSection: React.FC = () => (
   <div className="work-section" id="work">
-    <h2 className="section-title"><a href="#work">Work</a></h2>
+    <h2 className="section-title">
+      <a href="#work">Work</a>
+    </h2>
     {projectList.map((projectItem: Project, index) => {
       const {
         title,

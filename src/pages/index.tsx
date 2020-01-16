@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import Footer from '../components/Footer';
 import HomeSection from '../components/HomeSection';
@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 import StackSection from '../components/StackSection';
 import WorkSection from '../components/WorkSection';
 
-const Index = () => (
+const Index: React.FC = () => (
   <>
     <SEO />
     <HomeSection />

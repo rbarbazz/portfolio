@@ -1,16 +1,18 @@
-import * as React from 'react';
+import React from 'react';
 
 import TechnoCard from './TechnoCard';
 
 const devStack: { [key: string]: string[] } = {
+  back: ['Node', 'Django', 'MongoDB', 'Postgres'],
   front: ['React', 'Redux', 'Typescript', 'Sass'],
-  back: ['Node', 'Django', 'MongoDB', 'MySQL'],
-  tools: ['Webpack', 'Gulp', 'Mocha', 'Docker'],
+  tools: ['Webpack', 'Jest', 'Gulp', 'Docker'],
 };
 
-const StackSection = () => (
+const StackSection: React.FC = () => (
   <div className="stack-section" id="stack">
-    <h2 className="section-title"><a href="#stack">Development Stack</a></h2>
+    <h2 className="section-title">
+      <a href="#stack">Development Stack</a>
+    </h2>
     <div className="stack-wrapper">
       <TechnoCard categoryName="front" technoList={devStack.front} />
       <TechnoCard categoryName="back" technoList={devStack.back} />

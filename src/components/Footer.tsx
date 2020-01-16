@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 
 import ArrowIcon from './ArrowIcon';
 
-const Footer = () => (
+const Footer: React.FC = () => (
   <footer id="footer">
     <a className="arrow-icon" href="#home">
       <ArrowIcon />

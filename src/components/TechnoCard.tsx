@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 
 import { Techno } from './WorkCard';
 
-const TechnoCard = ({
+const TechnoCard: React.FC<{ categoryName: string; technoList: string[] }> = ({
   categoryName,
   technoList,
 }: {
