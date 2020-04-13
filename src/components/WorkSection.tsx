@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Project } from '../../work';
 import getImgByName from '../lib/getImgByName';
-import projectList from '../data/projectList';
-import useProjectsQuery from '../data/useProjectsQuery';
+import projectList from '../content/projectList';
+import useProjectsQuery from '../content/useProjectsQuery';
 import WorkCard from './WorkCard';
 
 const WorkSection: React.FC = () => {

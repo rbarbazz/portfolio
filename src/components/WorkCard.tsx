@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 import React from 'react';
 
 import { IllustratedProject } from '../../work';
-import technoIcons from '../data/technoIcons';
+import technoIcons from '../content/technoIcons';
 
 const WorkCard: React.FC<IllustratedProject> = ({
   title,

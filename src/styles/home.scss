@@ -8,6 +8,7 @@
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: top;
     color: $light-font-color;
     display: flex;
     height: 100vh;
@@ -46,6 +47,7 @@
 .presentation-photo {
     border-radius: 50%;
     margin-bottom: $base-margin / 2;
+    width: 200px;
 }
 .presentation-title {
     font-size: 2em;
@@ -95,6 +97,7 @@
     .presentation-photo {
         height: 160px;
         margin-bottom: 30px;
+        width: 160px;
     }
     .presentation-description {
         width: 90%;
@@ -113,6 +116,7 @@
     }
     .presentation-photo {
         height: 130px;
+        width: 130px;
     }
     .presentation-description {
         max-width: 275px;

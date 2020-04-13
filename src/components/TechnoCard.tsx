@@ -1,6 +1,6 @@
 import React from 'react';
 
-import technoIcons from '../data/technoIcons';
+import technoIcons from '../content/technoIcons';
 
 const TechnoCard: React.FC<{ categoryName: string; technoList: string[] }> = ({
   categoryName,
