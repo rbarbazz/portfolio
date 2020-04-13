@@ -8,7 +8,7 @@ const useProjectsQuery = () =>
           name
           childImageSharp {
             fluid(maxWidth: 1300, quality: 90) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

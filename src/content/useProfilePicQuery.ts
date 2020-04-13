@@ -6,7 +6,7 @@ const useProfilePicQuery = () =>
       file(name: { eq: "RB" }) {
         childImageSharp {
           fluid(maxWidth: 200, quality: 90) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
