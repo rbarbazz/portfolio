@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Techno } from './WorkCard';
+import technoIcons from '../data/technoIcons';
 
 const TechnoCard: React.FC<{ categoryName: string; technoList: string[] }> = ({
   categoryName,
@@ -14,7 +14,7 @@ const TechnoCard: React.FC<{ categoryName: string; technoList: string[] }> = ({
     <div className={`${categoryName}-container techno-container`}>
       {technoList.map((technoItem, index) => (
         <div className="techno-logo-wrapper" key={`techno${index}`}>
-          <img src={Techno[technoItem]} alt={`${technoItem} logo`} />
+          <img src={technoIcons[technoItem]} alt={`${technoItem} logo`} />
         </div>
       ))}
     </div>

@@ -1,7 +1,13 @@
+import { FluidObject } from 'gatsby-image';
+
 declare interface Project {
   title: string;
   description: string;
-  screenshotUrl: string;
+  fileName: string;
   technoList: string[];
   projectUrl: string;
+}
+
+declare interface IllustratedProject extends Project {
+  fluid: FluidObject;
 }

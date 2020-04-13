@@ -1,66 +1,22 @@
 import { OutboundLink } from 'gatsby-plugin-gtag';
+import Img from 'gatsby-image';
 import React from 'react';
 
-import AWSIcon from '../../static/techno/AWS.svg';
-import CIcon from '../../static/techno/C.svg';
-import CSSIcon from '../../static/techno/CSS.svg';
-import DjangoIcon from '../../static/techno/Django.svg';
-import DockerIcon from '../../static/techno/Docker.png';
-import GTKIcon from '../../static/techno/GTK.svg';
-import GulpIcon from '../../static/techno/Gulp.svg';
-import HTMLIcon from '../../static/techno/HTML.svg';
-import JestIcon from '../../static/techno/Jest.svg';
-import JQueryIcon from '../../static/techno/JQuery.svg';
-import MochaIcon from '../../static/techno/Mocha.svg';
-import MongoDBIcon from '../../static/techno/MongoDB.svg';
-import MySQLIcon from '../../static/techno/MySQL.svg';
-import NodeIcon from '../../static/techno/Node.svg';
-import PostgresIcon from '../../static/techno/Postgres.svg';
-import ReactIcon from '../../static/techno/React.svg';
-import ReduxIcon from '../../static/techno/Redux.svg';
-import SassIcon from '../../static/techno/Sass.svg';
-import SocketIOIcon from '../../static/techno/SocketIO.svg';
-import TypescriptIcon from '../../static/techno/Typescript.svg';
-import WebpackIcon from '../../static/techno/Webpack.svg';
-import WordpressIcon from '../../static/techno/Wordpress.svg';
+import { IllustratedProject } from '../../work';
+import technoIcons from '../data/technoIcons';
 
-export const Techno: { [name: string]: string } = {
-  AWS: AWSIcon,
-  C: CIcon,
-  CSS: CSSIcon,
-  Django: DjangoIcon,
-  Docker: DockerIcon,
-  GTK: GTKIcon,
-  Gulp: GulpIcon,
-  HTML: HTMLIcon,
-  Jest: JestIcon,
-  JQuery: JQueryIcon,
-  Mocha: MochaIcon,
-  MongoDB: MongoDBIcon,
-  MySQL: MySQLIcon,
-  Node: NodeIcon,
-  Postgres: PostgresIcon,
-  React: ReactIcon,
-  Redux: ReduxIcon,
-  Sass: SassIcon,
-  SocketIO: SocketIOIcon,
-  Typescript: TypescriptIcon,
-  Webpack: WebpackIcon,
-  Wordpress: WordpressIcon,
-};
-
-const WorkCard: React.FC<Project> = ({
+const WorkCard: React.FC<IllustratedProject> = ({
   title,
   description,
-  screenshotUrl,
+  fluid,
   technoList,
   projectUrl,
-}: Project) => (
+}: IllustratedProject) => (
   <div className="work-card">
     <OutboundLink href={projectUrl} target="_blank">
-      <img
+      <Img
         className="project-screenshot"
-        src={screenshotUrl}
+        fluid={fluid}
         alt={`${title} illustration`}
       />
     </OutboundLink>
@@ -73,7 +29,7 @@ const WorkCard: React.FC<Project> = ({
     <div className="project-techno-container">
       {technoList.map((technoItem, index) => (
         <div key={`${title}-techno${index}`} className="project-techno-wrapper">
-          <img src={Techno[technoItem]} alt={`${technoItem} logo`} />
+          <img src={technoIcons[technoItem]} alt={`${technoItem} logo`} />
         </div>
       ))}
     </div>
