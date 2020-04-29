@@ -18,7 +18,7 @@ const HomeSection: React.FC = () => {
 
   return (
     <BackgroundImage
-      className="home-section"
+      className="home-section generic-section"
       id="home"
       fluid={emeraldLakeData.file.childImageSharp.fluid}
     >

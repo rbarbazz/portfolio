@@ -6,14 +6,13 @@
 
 .work-section {
     align-items: center;
-    background-color: white;
-    color: $dark-font-color;
     display: flex;
     flex-direction: column;
-    margin-bottom: $base-margin;
+    padding-bottom: $base-margin;
 }
 .work-card {
     align-items: center;
+    background-color: $light-secondary-bg-color;
     border-radius: 10px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
@@ -50,7 +49,7 @@
         transition: color 0.5s;
     }
     &:hover > a {
-        color: $secondary-font-color;
+        color: $light-secondary-font-color;
     }
 }
 .project-description {

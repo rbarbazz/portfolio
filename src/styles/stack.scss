@@ -11,13 +11,33 @@ $wrapper-width-others: 112px + $img-margin-sides;
 
 .stack-section {
     align-items: center;
-    background-color: white;
-    color: $dark-font-color;
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    > button {
+        -webkit-appearance: none;
+        background-color: $light-bg-color;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        outline: none;
+        transition: fill 0.3s;
+
+        > svg {
+            height: 32px;
+            width: 32px;
+        }
+    }
+    svg:hover {
+        fill: $light-secondary-font-color;
+    }
 }
 .stack-card {
     align-items: center;
+    background-color: $light-secondary-bg-color;
     border-radius: 10px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;

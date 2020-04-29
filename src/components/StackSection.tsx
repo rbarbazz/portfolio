@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import TechnoCard from './TechnoCard';
+import ThemeToggle from './ThemeToggle';
 
 const devStack: { [key: string]: string[] } = {
   back: ['Node', 'Django', 'MongoDB', 'Postgres'],
@@ -9,7 +10,7 @@ const devStack: { [key: string]: string[] } = {
 };
 
 const StackSection: React.FC = () => (
-  <div className="stack-section" id="stack">
+  <div className="stack-section generic-section" id="stack">
     <h2 className="section-title">
       <a href="#stack">Development Stack</a>
     </h2>
@@ -18,6 +19,7 @@ const StackSection: React.FC = () => (
       <TechnoCard categoryName="back" technoList={devStack.back} />
       <TechnoCard categoryName="tools" technoList={devStack.tools} />
     </div>
+    <ThemeToggle />
   </div>
 );
 

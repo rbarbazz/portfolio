@@ -10,7 +10,7 @@ const WorkSection: React.FC = () => {
   const projects = useProjectsQuery();
 
   return (
-    <div className="work-section" id="work">
+    <div className="work-section generic-section" id="work">
       <h2 className="section-title">
         <a href="#work">Work</a>
       </h2>

@@ -6,9 +6,15 @@
 
 $main-font-family: 'Fira Code', monospace;
 
+$dark-bg-color: #17223b;
+$dark-secondary-bg-color: #263859;
+$light-bg-color: white;
+$light-secondary-bg-color: white;
+
 $dark-font-color: #282828;
 $light-font-color: white;
-$secondary-font-color: #458588;
+$light-secondary-font-color: #458588;
+$dark-secondary-font-color: #ff6768;
 
 $base-margin: 100px;
 $main-container-size: 1300px;
@@ -40,6 +46,10 @@ a {
     text-decoration: none;
     color: initial;
 }
+.section {
+    background-color: $light-bg-color;
+    color: $dark-font-color;
+}
 .section-title {
     font-size: 42px;
     font-weight: 500;
@@ -47,10 +57,63 @@ a {
     width: 90%;
 
     & > a {
+        color: $dark-font-color;
         transition: color 0.5s;
     }
     &:hover > a {
-        color: $secondary-font-color;
+        color: $light-secondary-font-color;
+    }
+}
+
+/*
+   Dark Theme
+==========================================================================
+*/
+
+.dark-theme {
+    .section-title {
+        & > a {
+            color: $light-font-color;
+        }
+        &:hover > a {
+            color: $dark-secondary-font-color;
+        }
+    }
+    .generic-section {
+        background-color: $dark-bg-color;
+        color: $light-font-color;
+    }
+    .stack-section {
+        button {
+            background-color: $dark-bg-color;
+        }
+        svg:hover {
+            fill: $dark-secondary-font-color;
+        }
+    }
+    .stack-card {
+        background-color: $dark-secondary-bg-color;
+    }
+    .work-card {
+        background-color: $dark-secondary-bg-color;
+        a {
+            color: $light-font-color;
+        }
+    }
+    .project-title {
+        &:hover > a {
+            color: $dark-secondary-font-color;
+        }
+    }
+    #footer {
+        .arrow-icon {
+            & * {
+                fill: $light-font-color;
+            }
+            &:hover * {
+                fill: $dark-secondary-font-color;
+            }
+        }
     }
 }
 
