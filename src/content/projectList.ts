@@ -13,14 +13,14 @@ const projectList: Project[] = [
     description: 'Budget planner and expense tracker',
     fileName: 'PersonalFinanceTracker',
     technoList: ['React', 'Node', 'Postgres', 'Docker'],
-    projectUrl: 'https://finance.rbarbazz.com/',
+    projectUrl: 'https://rbarbazz-finance.herokuapp.com/',
   },
   {
     title: 'Red Tetris',
     description: 'Tetris game written in Full Stack Javascript',
     fileName: 'RedTetris',
     technoList: ['React', 'Redux', 'Node', 'SocketIO'],
-    projectUrl: 'http://tetris.rbarbazz.com/',
+    projectUrl: 'https://redtetris-42.herokuapp.com/',
   },
   {
     title: 'Alexis Assoignon',
