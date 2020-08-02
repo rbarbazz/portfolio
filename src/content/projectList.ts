@@ -20,7 +20,7 @@ const projectList: Project[] = [
     description: 'Tetris game written in Full Stack Javascript',
     fileName: 'RedTetris',
     technoList: ['React', 'Redux', 'Node', 'SocketIO'],
-    projectUrl: 'https://redtetris-42.herokuapp.com/',
+    projectUrl: 'http://tetris.rbarbazz.com/',
   },
   {
     title: 'Alexis Assoignon',
