@@ -4,7 +4,6 @@ declare interface Project {
   title: string;
   description: string;
   fileName: string;
-  technoList: string[];
   projectUrl: string;
 }
 

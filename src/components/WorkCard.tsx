@@ -3,13 +3,11 @@ import Img from 'gatsby-image';
 import React from 'react';
 
 import { IllustratedProject } from '../../work';
-import technoIcons from '../content/technoIcons';
 
 const WorkCard: React.FC<IllustratedProject> = ({
   title,
   description,
   fluid,
-  technoList,
   projectUrl,
 }: IllustratedProject) => (
   <div className="work-card">
@@ -26,13 +24,6 @@ const WorkCard: React.FC<IllustratedProject> = ({
       </OutboundLink>
     </h3>
     <p className="project-description">{description}</p>
-    <div className="project-techno-container">
-      {technoList.map((technoItem, index) => (
-        <div key={`${title}-techno${index}`} className="project-techno-wrapper">
-          <img src={technoIcons[technoItem]} alt={`${technoItem} logo`} />
-        </div>
-      ))}
-    </div>
   </div>
 );
 

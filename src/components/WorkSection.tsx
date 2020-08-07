@@ -15,13 +15,7 @@ const WorkSection: React.FC = () => {
         <a href="#work">Work</a>
       </h2>
       {projectList.map((projectItem: Project, index) => {
-        const {
-          title,
-          description,
-          fileName,
-          technoList,
-          projectUrl,
-        } = projectItem;
+        const { title, description, fileName, projectUrl } = projectItem;
 
         return (
           <WorkCard
@@ -30,7 +24,6 @@ const WorkSection: React.FC = () => {
             description={description}
             fileName={fileName}
             fluid={getImgByName(fileName, projects)}
-            technoList={technoList}
             projectUrl={projectUrl}
           />
         );

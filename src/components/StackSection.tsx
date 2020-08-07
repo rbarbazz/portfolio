@@ -12,7 +12,7 @@ const devStack: { [key: string]: string[] } = {
 const StackSection: React.FC = () => (
   <div className="stack-section generic-section" id="stack">
     <h2 className="section-title">
-      <a href="#stack">Development Stack</a>
+      <a href="#stack">Tech Stack</a>
     </h2>
     <div className="stack-wrapper">
       <TechnoCard categoryName="front" technoList={devStack.front} />

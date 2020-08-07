@@ -57,33 +57,11 @@
     margin: 0 0 ($base-margin / 2);
     width: 90%;
 }
-.project-techno-container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: $base-margin / 2;
-    width: 100%;
-
-    img {
-        height: 60px;
-        margin: 0 40px;
-    }
-}
 
 /*
    Responsive
 ==========================================================================
 */
-
-@media (max-width: map-get($breakpoints, tablet)) {
-    .project-techno-container {
-        justify-content: space-evenly;
-
-        img {
-            margin: 0;
-        }
-    }
-}
 
 @media (max-width: map-get($breakpoints, small-tablet)) {
 }
@@ -91,15 +69,5 @@
 @media (max-width: map-get($breakpoints, phone)) {
     .work-card {
         font-size: 16px;
-    }
-    .project-techno-container {
-        flex-wrap: wrap;
-        padding: 0;
-        margin-bottom: ($base-margin / 2) - 20px;
-
-        .project-techno-wrapper {
-            margin: 20px 0;
-            width: 50%;
-        }
     }
 }
