@@ -8,28 +8,33 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
-    "gatsby": "^2.24.7",
-    "gatsby-background-image": "^1.1.1",
-    "gatsby-image": "^2.3.2",
+    "gatsby": "^2.24.53",
+    "gatsby-background-image": "^1.1.2",
+    "gatsby-image": "^2.4.16",
     "gatsby-plugin-gtag": "^1.0.13",
-    "gatsby-plugin-sass": "^2.2.1",
-    "gatsby-plugin-sharp": "^2.5.4",
-    "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-sharp": "^2.4.4",
+    "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-plugin-sharp": "^2.6.31",
+    "gatsby-source-filesystem": "^2.3.27",
+    "gatsby-transformer-sharp": "^2.5.14",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet-async": "^1.0.4"
+    "react-helmet-async": "^1.0.6"
   },
   "devDependencies": {
-    "@types/react": "^16.9.34",
-    "@types/react-dom": "^16.9.6",
-    "gatsby-plugin-typescript": "^2.3.1",
-    "typescript": "^3.8.3"
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "gatsby-plugin-typescript": "^2.4.18",
+    "gatsby-react-router-scroll": "^3.0.0",
+    "typescript": "^3.9.7"
+  },
+  "resolutions": {
+    "gatsby-react-router-scroll": "3.0.0"
   },
   "repository": {
     "type": "git",
