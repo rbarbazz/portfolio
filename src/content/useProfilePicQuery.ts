@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby'
 
 const useProfilePicQuery = () =>
   useStaticQuery(graphql`
@@ -11,6 +11,6 @@ const useProfilePicQuery = () =>
         }
       }
     }
-  `);
+  `)
 
-export default useProfilePicQuery;
+export default useProfilePicQuery

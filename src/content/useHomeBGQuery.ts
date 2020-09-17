@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby'
 
 const useHomeBGQuery = () =>
   useStaticQuery(graphql`
@@ -11,6 +11,6 @@ const useHomeBGQuery = () =>
         }
       }
     }
-  `);
+  `)
 
-export default useHomeBGQuery;
+export default useHomeBGQuery

@@ -1,10 +1,10 @@
-import { FluidObject } from 'gatsby-image';
-import { FileSystemNode } from 'gatsby-source-filesystem';
+import { FluidObject } from 'gatsby-image'
+import { FileSystemNode } from 'gatsby-source-filesystem'
 
 interface childImageSharpNode extends FileSystemNode {
   childImageSharp: {
-    fluid: FluidObject;
-  };
+    fluid: FluidObject
+  }
 }
 
 const getImgByName = (
@@ -13,10 +13,10 @@ const getImgByName = (
 ): FluidObject | any => {
   const imgNode = data.allFile.nodes.find(
     (node: childImageSharpNode) => node.name === fileName,
-  );
+  )
 
-  if (imgNode) return imgNode.childImageSharp.fluid;
-  return {};
-};
+  if (imgNode) return imgNode.childImageSharp.fluid
+  return {}
+}
 
-export default getImgByName;
+export default getImgByName

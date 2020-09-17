@@ -1,20 +1,19 @@
-import { OutboundLink } from 'gatsby-plugin-gtag';
-import BackgroundImage from 'gatsby-background-image';
-import Img from 'gatsby-image';
-import React from 'react';
+import BackgroundImage from 'gatsby-background-image'
+import Img from 'gatsby-image'
+import React from 'react'
 
-import { useSiteMetadata } from './SEO';
-import ArrowIcon from './ArrowIcon';
-import EmailIcon from './EmailIcon';
-import GithubIcon from './GithubIcon';
-import LinkedinIcon from './LinkedinIcon';
-import useHomeBGQuery from '../content/useHomeBGQuery';
-import useProfilePicQuery from '../content/useProfilePicQuery';
+import { useSiteMetadata } from './SEO'
+import ArrowIcon from './ArrowIcon'
+import EmailIcon from './EmailIcon'
+import GithubIcon from './GithubIcon'
+import LinkedinIcon from './LinkedinIcon'
+import useHomeBGQuery from '../content/useHomeBGQuery'
+import useProfilePicQuery from '../content/useProfilePicQuery'
 
 const HomeSection: React.FC = () => {
-  const { title, socialLinks } = useSiteMetadata();
-  const emeraldLakeData = useHomeBGQuery();
-  const profilePicData = useProfilePicQuery();
+  const { title, socialLinks } = useSiteMetadata()
+  const emeraldLakeData = useHomeBGQuery()
+  const profilePicData = useProfilePicQuery()
 
   return (
     <BackgroundImage
@@ -33,22 +32,22 @@ const HomeSection: React.FC = () => {
           Full Stack Developer, based in Vancouver, BC
         </p>
         <div className="socials-container">
-          <OutboundLink target="_blank" href={socialLinks.github}>
+          <a target="_blank" href={socialLinks.github}>
             <GithubIcon />
-          </OutboundLink>
-          <OutboundLink target="_blank" href={socialLinks.linkedin}>
+          </a>
+          <a target="_blank" href={socialLinks.linkedin}>
             <LinkedinIcon />
-          </OutboundLink>
-          <OutboundLink target="_blank" href={socialLinks.email}>
+          </a>
+          <a target="_blank" href={socialLinks.email}>
             <EmailIcon />
-          </OutboundLink>
+          </a>
         </div>
       </div>
       <a className="arrow-icon" href="#stack">
         <ArrowIcon />
       </a>
     </BackgroundImage>
-  );
-};
+  )
+}
 
-export default HomeSection;
+export default HomeSection

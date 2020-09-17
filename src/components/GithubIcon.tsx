@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const GithubIcon: React.FC = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31.21">
@@ -8,6 +8,6 @@ const GithubIcon: React.FC = () => (
       fillRule="evenodd"
     />
   </svg>
-);
+)
 
-export default GithubIcon;
+export default GithubIcon

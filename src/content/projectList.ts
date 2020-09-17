@@ -1,4 +1,4 @@
-import { Project } from '../../work';
+import { Project } from '../../work'
 
 const projectList: Project[] = [
   {
@@ -43,6 +43,6 @@ const projectList: Project[] = [
     fileName: 'Corewar',
     projectUrl: 'https://github.com/rbarbazz/corewar',
   },
-];
+]
 
-export default projectList;
+export default projectList

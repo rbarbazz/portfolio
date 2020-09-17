@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import TechnoCard from './TechnoCard';
-import ThemeToggle from './ThemeToggle';
+import TechnoCard from './TechnoCard'
+import ThemeToggle from './ThemeToggle'
 
 const devStack: { [key: string]: string[] } = {
   back: ['Node', 'Django', 'MongoDB', 'Postgres'],
   front: ['React', 'Redux', 'Typescript', 'Sass'],
   tools: ['Webpack', 'Jest', 'Gulp', 'Docker'],
-};
+}
 
 const StackSection: React.FC = () => (
   <div className="stack-section generic-section" id="stack">
@@ -21,6 +21,6 @@ const StackSection: React.FC = () => (
     </div>
     <ThemeToggle />
   </div>
-);
+)
 
-export default StackSection;
+export default StackSection

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Footer from '../components/Footer';
-import HomeSection from '../components/HomeSection';
-import SEO from '../components/SEO';
-import StackSection from '../components/StackSection';
-import WorkSection from '../components/WorkSection';
+import Footer from '../components/Footer'
+import HomeSection from '../components/HomeSection'
+import SEO from '../components/SEO'
+import StackSection from '../components/StackSection'
+import WorkSection from '../components/WorkSection'
 
 const Index: React.FC = () => (
   <>
@@ -14,6 +14,6 @@ const Index: React.FC = () => (
     <WorkSection />
     <Footer />
   </>
-);
+)
 
-export default Index;
+export default Index

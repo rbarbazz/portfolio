@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import ArrowIcon from './ArrowIcon';
+import ArrowIcon from './ArrowIcon'
 
 const Footer: React.FC = () => (
   <footer className="generic-section" id="footer">
@@ -9,6 +9,6 @@ const Footer: React.FC = () => (
     </a>
     {`© ${new Date().getFullYear()} Raphaël Barbazza`}
   </footer>
-);
+)
 
-export default Footer;
+export default Footer

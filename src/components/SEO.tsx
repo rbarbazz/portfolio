@@ -1,17 +1,17 @@
-import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { useStaticQuery, graphql } from 'gatsby';
-import React from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async'
+import { useStaticQuery, graphql } from 'gatsby'
+import React from 'react'
 
 type SiteMetadata = {
-  title: string;
-  titleTemplate: string;
-  description: string;
+  title: string
+  titleTemplate: string
+  description: string
   socialLinks: {
-    github: string;
-    linkedin: string;
-    email: string;
-  };
-};
+    github: string
+    linkedin: string
+    email: string
+  }
+}
 
 export const useSiteMetadata = (): SiteMetadata => {
   const { site } = useStaticQuery(
@@ -31,12 +31,12 @@ export const useSiteMetadata = (): SiteMetadata => {
         }
       }
     `,
-  );
-  return site.siteMetadata;
-};
+  )
+  return site.siteMetadata
+}
 
 const SEO: Function = () => {
-  const { title, titleTemplate, description } = useSiteMetadata();
+  const { title, titleTemplate, description } = useSiteMetadata()
 
   return (
     <HelmetProvider>
@@ -76,7 +76,7 @@ const SEO: Function = () => {
         ]}
       />
     </HelmetProvider>
-  );
-};
+  )
+}
 
-export default SEO;
+export default SEO

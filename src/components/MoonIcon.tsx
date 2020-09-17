@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const MoonIcon: React.FC = () => (
   <svg
@@ -15,6 +15,6 @@ const MoonIcon: React.FC = () => (
       </g>
     </g>
   </svg>
-);
+)
 
-export default MoonIcon;
+export default MoonIcon

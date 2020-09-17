@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import technoIcons from '../content/technoIcons';
+import technoIcons from '../content/technoIcons'
 
 const TechnoCard: React.FC<{ categoryName: string; technoList: string[] }> = ({
   categoryName,
   technoList,
 }: {
-  categoryName: string;
-  technoList: string[];
+  categoryName: string
+  technoList: string[]
 }) => (
   <div className="stack-card">
     <h3 className="stack-title">{categoryName}</h3>
@@ -19,6 +19,6 @@ const TechnoCard: React.FC<{ categoryName: string; technoList: string[] }> = ({
       ))}
     </div>
   </div>
-);
+)
 
-export default TechnoCard;
+export default TechnoCard

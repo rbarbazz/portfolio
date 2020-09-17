@@ -1,8 +1,7 @@
-import { OutboundLink } from 'gatsby-plugin-gtag';
-import Img from 'gatsby-image';
-import React from 'react';
+import Img from 'gatsby-image'
+import React from 'react'
 
-import { IllustratedProject } from '../../work';
+import { IllustratedProject } from '../../work'
 
 const WorkCard: React.FC<IllustratedProject> = ({
   title,
@@ -11,20 +10,20 @@ const WorkCard: React.FC<IllustratedProject> = ({
   projectUrl,
 }: IllustratedProject) => (
   <div className="work-card">
-    <OutboundLink href={projectUrl} target="_blank">
+    <a href={projectUrl} target="_blank">
       <Img
         className="project-screenshot"
         fluid={fluid}
         alt={`${title} illustration`}
       />
-    </OutboundLink>
+    </a>
     <h3 className="project-title">
-      <OutboundLink href={projectUrl} target="_blank">
+      <a href={projectUrl} target="_blank">
         {title}
-      </OutboundLink>
+      </a>
     </h3>
     <p className="project-description">{description}</p>
   </div>
-);
+)
 
-export default WorkCard;
+export default WorkCard

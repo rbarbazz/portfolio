@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import { Project } from '../../work';
-import getImgByName from '../lib/getImgByName';
-import projectList from '../content/projectList';
-import useProjectsQuery from '../content/useProjectsQuery';
-import WorkCard from './WorkCard';
+import { Project } from '../../work'
+import getImgByName from '../lib/getImgByName'
+import projectList from '../content/projectList'
+import useProjectsQuery from '../content/useProjectsQuery'
+import WorkCard from './WorkCard'
 
 const WorkSection: React.FC = () => {
-  const projects = useProjectsQuery();
+  const projects = useProjectsQuery()
 
   return (
     <div className="work-section generic-section" id="work">
@@ -15,7 +15,7 @@ const WorkSection: React.FC = () => {
         <a href="#work">Work</a>
       </h2>
       {projectList.map((projectItem: Project, index) => {
-        const { title, description, fileName, projectUrl } = projectItem;
+        const { title, description, fileName, projectUrl } = projectItem
 
         return (
           <WorkCard
@@ -26,10 +26,10 @@ const WorkSection: React.FC = () => {
             fluid={getImgByName(fileName, projects)}
             projectUrl={projectUrl}
           />
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default WorkSection;
+export default WorkSection

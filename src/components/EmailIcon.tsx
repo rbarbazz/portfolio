@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const EmailIcon: React.FC = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32.283">
@@ -8,6 +8,6 @@ const EmailIcon: React.FC = () => (
       fill="#fff"
     />
   </svg>
-);
+)
 
-export default EmailIcon;
+export default EmailIcon

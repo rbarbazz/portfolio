@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const ArrowIcon: React.FC = () => (
   <svg
@@ -17,6 +17,6 @@ const ArrowIcon: React.FC = () => (
       />
     </g>
   </svg>
-);
+)
 
-export default ArrowIcon;
+export default ArrowIcon

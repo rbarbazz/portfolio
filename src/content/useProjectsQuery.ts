@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby'
 
 const useProjectsQuery = () =>
   useStaticQuery(graphql`
@@ -14,6 +14,6 @@ const useProjectsQuery = () =>
         }
       }
     }
-  `);
+  `)
 
-export default useProjectsQuery;
+export default useProjectsQuery
