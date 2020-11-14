@@ -83,16 +83,13 @@ a {
         background-color: $dark-bg-color;
         color: $light-font-color;
     }
-    .stack-section {
+    .work-section {
         button {
             background-color: $dark-bg-color;
         }
         svg:hover {
             fill: $dark-secondary-font-color;
         }
-    }
-    .stack-card {
-        background-color: $dark-secondary-bg-color;
     }
     .work-card {
         background-color: $dark-secondary-bg-color;

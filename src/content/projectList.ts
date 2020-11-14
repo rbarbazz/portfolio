@@ -26,12 +26,6 @@ const projectList: Project[] = [
     projectUrl: 'https://alexisassoignon.com/',
   },
   {
-    title: 'Game Release Bot',
-    description: 'Discord bot - Game release reminder',
-    fileName: 'GameReleaseBot',
-    projectUrl: 'https://github.com/rbarbazz/game-release-bot',
-  },
-  {
     title: "Enfants Venus d'Ailleurs",
     description: 'Wordpress-based website created for a French charity',
     fileName: 'EVA',
@@ -42,6 +36,12 @@ const projectList: Project[] = [
     description: 'Virtual arena where concurrent processes fight',
     fileName: 'Corewar',
     projectUrl: 'https://github.com/rbarbazz/corewar',
+  },
+  {
+    title: 'Game Release Bot',
+    description: 'Discord bot - Game release reminder',
+    fileName: 'GameReleaseBot',
+    projectUrl: 'https://github.com/rbarbazz/game-release-bot',
   },
 ]
 

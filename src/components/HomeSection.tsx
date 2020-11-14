@@ -43,7 +43,7 @@ const HomeSection: React.FC = () => {
           </a>
         </div>
       </div>
-      <a className="arrow-icon" href="#stack">
+      <a className="arrow-icon" href="#work">
         <ArrowIcon />
       </a>
     </BackgroundImage>

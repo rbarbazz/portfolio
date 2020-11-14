@@ -3,6 +3,7 @@ import React from 'react'
 import { Project } from '../../work'
 import getImgByName from '../lib/getImgByName'
 import projectList from '../content/projectList'
+import ThemeToggle from './ThemeToggle'
 import useProjectsQuery from '../content/useProjectsQuery'
 import WorkCard from './WorkCard'
 
@@ -28,6 +29,7 @@ const WorkSection: React.FC = () => {
           />
         )
       })}
+      <ThemeToggle />
     </div>
   )
 }
