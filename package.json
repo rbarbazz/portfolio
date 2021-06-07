@@ -1,5 +1,5 @@
 {
-  "name": "raphaelbarbazza.com",
+  "name": "portfolio",
   "private": true,
   "description": "My personal website",
   "version": "1.0.0",
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rbarbazz/raphaelbarbazza.com"
+    "url": "https://github.com/rbarbazz/portfolio"
   }
 }

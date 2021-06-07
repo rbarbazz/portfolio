@@ -1,8 +1,5 @@
-# These rules will change if you change your site’s custom domains or HTTPS settings
-
 # Redirect domain aliases to primary domain
-https://rbarbazz.com/* https://raphaelbarbazza.com/:splat 301!
-https://www.rbarbazz.com/* https://raphaelbarbazza.com/:splat 301!
+https://projects.rbarbazz.com/* https://projects.raphaelbarbazza.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://raphaelbarbazza.netlify.com/* https://raphaelbarbazza.com/:splat 301!
+https://portfolio-raphaelbarbazza.netlify.app/* https://projects.raphaelbarbazza.com/:splat 301!
