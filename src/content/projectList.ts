@@ -23,7 +23,7 @@ const projectList: Project[] = [
     title: 'Alexis Assoignon',
     description: 'Personal blog about financial independance',
     fileName: 'AlexisAssoignon',
-    projectUrl: 'https://alexisassoignon.com/',
+    projectUrl: 'https://mysustainablesanctuary.com/',
   },
   {
     title: "Enfants Venus d'Ailleurs",
