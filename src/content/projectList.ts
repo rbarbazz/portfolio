@@ -11,7 +11,7 @@ const projectList: Project[] = [
     title: 'Personal Finance Tracker',
     description: 'Budget planner and expense tracker',
     fileName: 'PersonalFinanceTracker',
-    projectUrl: 'https://rbarbazz-finance.herokuapp.com/',
+    projectUrl: 'https://github.com/rbarbazz/personal-finance-tracker/',
   },
   {
     title: 'Red Tetris',
