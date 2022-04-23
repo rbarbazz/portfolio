@@ -1,4 +1,4 @@
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 
 import { IllustratedProject } from '../../work'
@@ -8,21 +8,36 @@ const WorkCard: React.FC<IllustratedProject> = ({
   description,
   fluid,
   projectUrl,
-}: IllustratedProject) => (
-  <div className="work-card">
-    <a href={projectUrl} target="_blank">
-      <GatsbyImage
-        image={fluid}
-        className="project-screenshot"
-        alt={`${title} illustration`} />
-    </a>
-    <h3 className="project-title">
-      <a href={projectUrl} target="_blank">
-        {title}
-      </a>
-    </h3>
-    <p className="project-description">{description}</p>
-  </div>
-)
+}: IllustratedProject) => {
+  const projectImageComponent = (
+    <GatsbyImage
+      image={fluid}
+      className="project-screenshot"
+      alt={`${title} illustration`}
+    />
+  )
+
+  return (
+    <div className="work-card">
+      {!!projectUrl ? (
+        <a href={projectUrl} target="_blank">
+          {projectImageComponent}
+        </a>
+      ) : (
+        projectImageComponent
+      )}
+      <h3 className="project-title">
+        {!!projectUrl ? (
+          <a href={projectUrl} target="_blank">
+            {title}
+          </a>
+        ) : (
+          title
+        )}
+      </h3>
+      <p className="project-description">{description}</p>
+    </div>
+  )
+}
 
 export default WorkCard

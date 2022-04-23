@@ -5,7 +5,6 @@ const projectList: Project[] = [
     title: 'Insidr Guide Library',
     description: 'React app interacting with a Django API',
     fileName: 'Insidr',
-    projectUrl: 'https://insidr.co/free-guide-form/',
   },
   {
     title: 'Personal Finance Tracker',
@@ -29,7 +28,6 @@ const projectList: Project[] = [
     title: "Enfants Venus d'Ailleurs",
     description: 'Wordpress-based website created for a French charity',
     fileName: 'EVA',
-    projectUrl: 'https://enfantsvenusdailleurs.org/',
   },
   {
     title: 'Corewar',

@@ -4,7 +4,7 @@ declare interface Project {
   title: string
   description: string
   fileName: string
-  projectUrl: string
+  projectUrl?: string
 }
 
 declare interface IllustratedProject extends Project {
