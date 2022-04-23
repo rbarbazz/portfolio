@@ -1,4 +1,4 @@
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from 'react'
 
 import { IllustratedProject } from '../../work'
@@ -11,11 +11,10 @@ const WorkCard: React.FC<IllustratedProject> = ({
 }: IllustratedProject) => (
   <div className="work-card">
     <a href={projectUrl} target="_blank">
-      <Img
+      <GatsbyImage
+        image={fluid}
         className="project-screenshot"
-        fluid={fluid}
-        alt={`${title} illustration`}
-      />
+        alt={`${title} illustration`} />
     </a>
     <h3 className="project-title">
       <a href={projectUrl} target="_blank">

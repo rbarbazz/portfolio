@@ -5,15 +5,16 @@ module.exports = {
     description: 'My projects',
     socialLinks: {
       github: 'https://github.com/rbarbazz',
-      linkedin: 'https://www.linkedin.com/in/raphaelbarbazza/',
-      email: 'mailto:raphael.barbazza@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/raphaelbarbazza',
+      website: 'https://raphaelbarbazza.com',
     },
   },
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

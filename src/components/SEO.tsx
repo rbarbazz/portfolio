@@ -9,7 +9,7 @@ type SiteMetadata = {
   socialLinks: {
     github: string
     linkedin: string
-    email: string
+    website: string
   }
 }
 
@@ -25,7 +25,7 @@ export const useSiteMetadata = (): SiteMetadata => {
             socialLinks {
               github
               linkedin
-              email
+              website
             }
           }
         }

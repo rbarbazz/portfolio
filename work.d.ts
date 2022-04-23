@@ -1,4 +1,4 @@
-import { FluidObject } from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 
 declare interface Project {
   title: string
@@ -8,5 +8,5 @@ declare interface Project {
 }
 
 declare interface IllustratedProject extends Project {
-  fluid: FluidObject
+  fluid: GatsbyImage
 }
